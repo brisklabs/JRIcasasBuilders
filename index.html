@@ -40,9 +40,9 @@
                       <ul class="rd-navbar-nav">
                         <li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Home</a>
                         </li>
-                        <li class="rd-nav-item"><a class="rd-nav-link" href="#about">About</a>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="#services">Services</a>
                         </li>
-                        <li class="rd-nav-item"><a class="rd-nav-link" href="#team">Team</a>
+                        <li class="rd-nav-item"><a class="rd-nav-link" href="#about">About</a>
                         </li>
                         <li class="rd-nav-item"><a class="rd-nav-link" href="#portfolio">Portfolio</a>
                         </li>
@@ -140,7 +140,7 @@
         </section>
       </div>
 
-      <section class="section novi-background bg-cover section-xl bg-white parallax-scene-js" id="about">
+      <section class="section novi-background bg-cover section-xl bg-white parallax-scene-js" id="services">
         <div class="container">
           <div class="row row-50 align-items-center justify-content-md-between">
             <div class="col-md-4 col-lg-3">
@@ -351,8 +351,8 @@
         </div>
       </section>
   
-      <!-- Team -->
-      <section class="section novi-background bg-cover section-lg bg-gray-100 text-center" id="team">
+      <!-- About Me -->
+      <section class="section novi-background bg-cover section-lg bg-gray-100 text-center" id="about">
         <div class="container">
           <h3 class="wow fadeInLeft">About Me</h3>
           <h6 class="title-style-1 wow fadeInRight">Ar. John Rey Icasas</h6>
@@ -435,6 +435,8 @@
           </div>
         </div>
       </section>
+
+      
       
       <footer class="section novi-background bg-cover section-sm footer-classic context-dark" id="contacts">
         <div class="container"><a class="brand wow blurIn" href="index.html"><img src="images/logo-inverse-2-108x124.jpeg" alt="" width="54" height="62"/></a>
@@ -448,6 +450,9 @@
             <li><a class="icon novi-icon mdi mdi-youtube-play" href="https://www.facebook.com/jricasas.builders17"></a></li>
           </ul>
           <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>J.R. ICASAS</span><span>. All Rights Reserved.</span></p>
+          <br /> Build by: <a
+                href="https://www.brisklabs.dev/" aria-label="brisklabs" target="_blank"
+                rel="noopener">brisklabs.dev</a>
         </div>
       </footer>
     </div>
@@ -455,5 +460,33 @@
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
     <!-- coded by Ragnar-->
+
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "PAGE-ID");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'API-VERSION'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
   </body>
+
+
+
 </html>
